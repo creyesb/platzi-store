@@ -19,13 +19,13 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'contacto',
+        path: 'contact',
         canActivate: [AdminGuard],
         loadChildren: () =>
           import('./contact/contact.module').then(m => m.ContactModule)
       },
       {
-        path: 'productos',
+        path: 'products',
         canActivate: [AdminGuard],
         loadChildren: () =>
           import('./product/product.module').then(m => m.ProductModule)
@@ -45,7 +45,7 @@ const routes: Routes = [
     path: '**',
     loadChildren: () =>
       import('./page-not-found/page-not-found.module').then(
-        m => m.PageNotFoundComponentModule
+        m => m.PageNotFoundModule
       )
   }
 ];
