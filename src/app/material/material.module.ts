@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatBadgeModule,
+    MatCardModule,
     MatCardModule
   ],
   exports: [
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatBadgeModule,
+    MatCardModule,
     MatCardModule
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {}

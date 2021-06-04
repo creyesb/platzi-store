@@ -11,7 +11,6 @@ import { Product } from './../../../core/models/product.model';
 })
 export class ProductDetailComponent implements OnInit {
   product!: Product;
-
   constructor(
     private route: ActivatedRoute,
     private productsService: ProductsService

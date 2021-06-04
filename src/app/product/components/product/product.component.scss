@@ -4,7 +4,11 @@
 //   border-radius: 5px;
 //   display: block;
 // }
-.crop-image{
+.cardProduct {
+  background-color: rgba(237, 237, 237, 0.338);
+  color: black;
+}
+.crop-image {
   height: 300px;
   width: 100%;
   overflow: hidden;
@@ -16,4 +20,13 @@
     transform: translate(-50%, -50%);
     max-width: 100%;
   }
+}
+.lowerButtons {
+  max-width: 400px;
+  margin-left: 15px;
+}
+
+.innerLowerButtons {
+  margin-left: auto;
+  margin-right: auto;
 }
