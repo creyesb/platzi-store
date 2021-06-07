@@ -10,7 +10,7 @@ import { Product } from './../../../core/models/product.model';
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
-  product!: Product;
+  product!: Product | any;
   constructor(
     private route: ActivatedRoute,
     private productsService: ProductsService
@@ -19,7 +19,27 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
       const id = params.id;
-      this.product = this.productsService.getProduct(id)!;
+      this.fetchProduct(id);
+      // this.product = this.productsService.getProduct(id);
+    });
+  }
+
+  fetchProduct(id: string) {
+    this.productsService.getProduct(id).subscribe(product => {
+      this.product = product;
+    });
+  }
+
+  createProduct() {
+    const newProduct: Product = {
+      id: '1233',
+      title: 'Banner 2',
+      image: '/assets/images/banner-2.jpg',
+      price: 30000,
+      description: 'Banner 2'
+    };
+    this.productsService.createProduct(newProduct).subscribe(product => {
+      console.log(product);
     });
   }
 }
