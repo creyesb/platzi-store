@@ -10,7 +10,13 @@
     <p>{{ product.description }}</p>
   </div>
 
-  <button (click)="createProduct()">
-    crear
+  <button (click)="createProduct()" mat-raised-button color="primary">
+    Crear
+  </button>
+  <button (click)="updateProduct()" mat-raised-button color="accent">
+    Actualizar
+  </button>
+  <button (click)="deleteProduct()" mat-raised-button>
+    X
   </button>
 </div>
