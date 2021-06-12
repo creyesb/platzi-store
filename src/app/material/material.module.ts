@@ -8,11 +8,18 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 
 import { MatInputModule } from '@angular/material/input';
-
+import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
-
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -26,7 +33,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule,
+    MatDialogModule,
+
+    MatSidenavModule,
+    MatListModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   exports: [
     MatButtonModule,
@@ -38,7 +54,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule,
+    MatDialogModule,
+
+    MatSidenavModule,
+    MatListModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatGridListModule,
+    MatMenuModule
   ]
 })
 export class MaterialModule {}
