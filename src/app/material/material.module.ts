@@ -8,6 +8,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 
 import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
@@ -36,7 +37,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     MatTableModule,
     MatDialogModule,
-
+    MatFormFieldModule,
     MatSidenavModule,
     MatListModule,
     MatSortModule,
@@ -57,7 +58,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     ReactiveFormsModule,
     MatTableModule,
     MatDialogModule,
-
+    MatFormFieldModule,
     MatSidenavModule,
     MatListModule,
     MatSortModule,

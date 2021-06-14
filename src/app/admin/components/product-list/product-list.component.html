@@ -1,3 +1,11 @@
+<button
+  mat-icon-button
+  color="accent"
+  aria-label="Example icon button with a home icon"
+  routerLink="/admin/products/create"
+>
+  <mat-icon>add</mat-icon>
+</button>
 <table mat-table [dataSource]="products" class="mat-elevation-z8">
   <ng-container matColumnDef="description">
     <th mat-header-cell *matHeaderCellDef>Descripción</th>
@@ -28,7 +36,7 @@
       <button
         mat-raised-button
         color="accent"
-        (click)="updateProduct(product.id)"
+        [routerLink]="['edit', product.id]"
       >
         Editar
       </button>

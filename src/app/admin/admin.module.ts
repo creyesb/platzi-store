@@ -11,13 +11,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TableComponent } from './components/table/table.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { FormProductComponent } from './components/form-product/form-product.component';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 @NgModule({
   declarations: [
     ProductFormComponent,
     NavComponent,
     TableComponent,
     DashboardComponent,
-    ProductListComponent
+    ProductListComponent,
+    FormProductComponent,
+    EditProductComponent
   ],
   imports: [
     CommonModule,

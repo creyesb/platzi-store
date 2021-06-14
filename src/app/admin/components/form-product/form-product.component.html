@@ -1,0 +1,73 @@
+<form [formGroup]="form" (ngSubmit)="saveProduct($event)">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Crear Producto</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="row">
+        <div class="col-xs">
+          <mat-form-field appearance="outline">
+            <input
+              formControlName="id"
+              matInput
+              type="text"
+              placeholder="Ingrese identificador"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <mat-form-field appearance="outline">
+            <input
+              formControlName="title"
+              matInput
+              type="text"
+              placeholder="Ingrese el titulo"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <mat-form-field appearance="outline">
+            <input
+              formControlName="price"
+              matInput
+              type="number"
+              placeholder="Ingrese el valor"
+            />
+          </mat-form-field>
+          <div *ngIf="priceField?.errors && priceField?.dirty">
+            <p *ngIf="priceField?.hasError('price_invalid')">
+              Valor excede el permitido
+            </p>
+
+            <p *ngIf="priceField?.hasError('required')">
+              El campo es requerido
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <mat-form-field appearance="outline">
+            <textarea
+              formControlName="description"
+              matInput
+              type="text"
+              placeholder="Ingrese la descripción"
+            >
+            </textarea>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="accent" [disabled]="form.invalid">
+        Crear Producto
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>
