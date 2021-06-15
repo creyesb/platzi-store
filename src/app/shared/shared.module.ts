@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { MaterialModule } from './../material/material.module';
 import { CartComponent } from './components/cart/cart.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ExponentialPipe,
@@ -25,6 +25,6 @@ import { CartComponent } from './components/cart/cart.component';
     FooterComponent,
     CartComponent
   ],
-  imports: [CommonModule, RouterModule, MaterialModule]
+  imports: [CommonModule, RouterModule, MaterialModule, ReactiveFormsModule]
 })
 export class SharedModule {}

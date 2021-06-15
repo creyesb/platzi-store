@@ -26,7 +26,12 @@
             >Contacto</a
           >
         </nav>
-        <a mat-flat-button matBadge="4" matBadgeColor="warn" color="primary">
+        <a
+          mat-flat-button
+          [matBadge]="productCounter"
+          matBadgeColor="warn"
+          color="primary"
+        >
           <mat-icon>shopping_cart</mat-icon>
           Carrito
         </a>

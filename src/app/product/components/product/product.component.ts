@@ -8,31 +8,24 @@ import {
 } from '@angular/core';
 
 import { Product } from '../../../core/models/product.model';
-
+import { CartService } from 'src/app/core/services/cart/cart.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })
-export class ProductComponent implements OnInit, OnDestroy {
+export class ProductComponent implements OnInit {
   @Input() product!: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
   today = new Date();
 
-  constructor() {
-    console.log('1. constructor');
-  }
+  constructor(private cartService: CartService) {}
 
-  ngOnInit() {
-    console.log('3. ngOnInit');
-  }
-
-  ngOnDestroy() {
-    console.log('5. ngOnDestroy');
-  }
+  ngOnInit() {}
 
   addCart() {
-    this.productClicked.emit(this.product.id);
+    console.log('añadir al carrito');
+    this.cartService.addCart(this.product);
   }
 }
