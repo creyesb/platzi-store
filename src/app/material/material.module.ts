@@ -6,6 +6,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
+import { MatStepperModule } from '@angular/material/stepper';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -43,7 +45,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSortModule,
     MatPaginatorModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatStepperModule,
+    LayoutModule
   ],
   exports: [
     MatButtonModule,
@@ -64,7 +68,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSortModule,
     MatPaginatorModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatStepperModule,
+    LayoutModule
   ]
 })
 export class MaterialModule {}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "platzistore-69d46": {
+      "hosting": {
+        "platzi-store": [
+          "platzistore-69d46"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "platzistore-69d46"
+  }
+}

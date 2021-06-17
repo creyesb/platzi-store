@@ -4,19 +4,14 @@
   </div>
   <div>
     <ul>
-      <li>Nombre: {{ product.title }}</li>
-      <li>Precio: {{ product.price | currency }}</li>
-    </ul>
-    <p>{{ product.description }}</p>
-  </div>
+      <li>
+        <h2>{{ product.title }}</h2>
+      </li>
 
-  <button (click)="createProduct()" mat-raised-button color="primary">
-    Crear
-  </button>
-  <button (click)="updateProduct()" mat-raised-button color="accent">
-    Actualizar
-  </button>
-  <button (click)="deleteProduct()" mat-raised-button>
-    X
-  </button>
+      <li>
+        <h3>Precio: {{ product.price | currency }}</h3>
+      </li>
+    </ul>
+    <h3>{{ product.description }}</h3>
+  </div>
 </div>

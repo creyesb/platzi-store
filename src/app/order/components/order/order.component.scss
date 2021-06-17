@@ -1,0 +1,24 @@
+.stepperStyle {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productList {
+  color: rgb(17, 15, 15);
+}
+
+.mat-stepper-horizontal {
+  background-color: rgba(219, 216, 216, 0.795);
+  color: black;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.mat-step-label {
+  color: black;
+  background-color: blue;
+}
+
+.image {
+  width: 100%;
+}
