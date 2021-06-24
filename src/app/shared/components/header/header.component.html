@@ -28,9 +28,10 @@
         </nav>
         <a
           mat-flat-button
-          [matBadge]="productCounter"
+          [matBadge]="productCounter$ | async"
           matBadgeColor="warn"
           color="primary"
+          routerLink="order"
         >
           <mat-icon>shopping_cart</mat-icon>
           Carrito
